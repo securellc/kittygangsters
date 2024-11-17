@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maison | kittygangsters.xyz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <style>
+body {
+    color: white;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.box {
+    width: 500px;
+    height: 340px;
+    background-image: url(/kittygangsters/img/maison/box.png);
+    background-size: cover;
+    border-radius: 8%;
+    border: 1px solid rgb(153, 92, 0);
+    text-align: center;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 35px rgb(153, 92, 0);
+    transition: all 0.3s ease; 
+}
+
+.box:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0 50px rgb(153, 92, 0);
+}
+
+.pfp img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.bio {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+}
+
+hr {
+    color: white;
+    height: 0.1px;
+    width: 300px;
+    margin: 0 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials button {
+    transition: all 0.1s ease;
+    background-color: transparent;
+    border-radius: 15px;
+    height: 40px;
+    width: 230px;
+}
+
+.socials button:hover {
+    background-color: rgba(46, 46, 46, 0.3);
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.overlay {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+	user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#dev {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="overlay" class="overlay" onclick="removeOverlay();">
+        <p class="glitch">:c</p>
+    </div>    <div class="container">
+        <div class="box">
+            <div class="pfp"><img src="/kittygangsters/img/maison/pfp.jpg" alt="Profile Picture"></div>
+            <h1 class="username">Maison</h1>
+            <p class="bio">never meet your idols</p>
+            <i id="dev" class="fa-solid fa-code" style="color: #ffffff;"></i>
+
+            <div class="border">
+                <hr>
+                <h3>Links</h3>
+                <hr>
+            </div>
+            <div class="socials">
+                <a target="_blank" href="https://guns.lol/net"><button><i class="fa-solid fa-link" style="color: #ffffff;"></i></button></a>
+                <a target="_blank" href="https://discord.com/users/1255620613826023586"><button><i class="fa-brands fa-discord" style="color: #ffffff;"></i></button></a>
+                
+                
+            </div>
+        </div>
+    </div>
+    <audio id="tunes" src="/kittygangsters/audio/Yng16.mp3"></audio>
+
+    <script>
+        function removeOverlay() {
+            const overlay = document.getElementById('overlay');
+            const audio = document.getElementById('tunes');
+            if (overlay) {
+                overlay.style.display = 'none';
+                audio.play();
+            }
+        }
+        
+    </script>
+</body>
+</html>

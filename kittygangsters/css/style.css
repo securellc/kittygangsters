@@ -1,0 +1,80 @@
+@import url('https://fonts.cdnfonts.com/css/so-bad');
+
+body {
+    font-family: 'So Bad', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+    color: white;
+    background-image: url(../img/mainbg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main-wrapper {
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+pre {
+    z-index: -1;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#datetime {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+
+    font-size: medium;
+}
+
+.box {
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 300px;
+    height: 20px;
+    background-image: url(../kittygangsters/img/maison/box.png);
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    position: relative; 
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.pfp {
+    position: absolute;
+    left: 10px;
+}
+
+.pfp img {
+    border-radius: 50%;
+    width: 30px;
+    height: auto; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

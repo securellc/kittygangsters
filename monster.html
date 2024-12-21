@@ -115,21 +115,30 @@
             </div>
         </div>
     </div>
-    <audio class="tunes" src="https://files.catbox.moe/cz3twm.mp3"></audio>
+    
+    <audio id="tunes" src="https://files.catbox.moe/cz3twm.mp3" preload="auto"></audio>
 
     <script>
         function removeOverlay() {
             const overlay = document.getElementById('overlay');
             const audio = document.getElementById('tunes');
             if (overlay) {
-                overlay.style.opacity = '0'; 
-                overlay.style.transition = 'opacity 1s ease'; 
+                overlay.style.opacity = '0';
+                overlay.style.transition = 'opacity 1s ease';
+    
+                audio.play().then(() => {
+                    console.log('Audio playback started successfully.');
+                }).catch(error => {
+                    console.error('Audio playback failed:', error);
+                    alert('Unable to start audio automatically. Please click the play button to start.');
+                });
+    
                 setTimeout(() => {
-                    overlay.style.display = 'none'; 
-                    audio.play();
+                    overlay.style.display = 'none';
                 }, 3000); 
             }
         }
     </script>
+    
 </body>
 </html>

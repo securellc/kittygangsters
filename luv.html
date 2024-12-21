@@ -117,18 +117,17 @@
             </div>
         </div>
     </div>
-    <audio class="tunes" src="https://files.catbox.moe/fe36y2.m4a"></audio>
+    <audio autoplay class="tunes" src="https://files.catbox.moe/lsrxx6.mp3"></audio>
 
     <script>
         function removeOverlay() {
             const overlay = document.getElementById('overlay');
-            const audio = document.getElementById('tunes');
             if (overlay) {
-                overlay.style.opacity = '0'; 
-                overlay.style.transition = 'opacity 1s ease'; 
+                overlay.style.opacity = '0';
+                overlay.style.transition = 'opacity 1s ease';
+    
                 setTimeout(() => {
-                    overlay.style.display = 'none'; 
-                    audio.play();
+                    overlay.style.display = 'none';
                 }, 3000); 
             }
         }

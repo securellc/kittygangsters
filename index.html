@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kittygangsters</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: cat;
+        src: url(vhs-gothic.ttf);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/img/bg.png);
+        backdrop-filter: blur(10px);
+        font-family: cat;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .box {
+        text-align: center;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        line-height: 4px;
+    }
+
+    .link {
+        transition: all 0.2s ease;
+    }
+
+    .link:hover {
+        transform: scale(1.3);
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1000;
+        background: url(/img/overlay.png) repeat 0 0;
+        animation: Static 2s infinite steps(4);
+        box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.4);
+    }
+
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1000;
+        background: url(/img/overlay2.png) repeat 0 0;
+        animation: Static 0.8s infinite steps(4);
+    }
+
+    @keyframes Static {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 4px; }
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <a href="/people/monster"><h3 class="link">monster</h3></a>
+            <a href="/people/maison"><h3 class="link">maison</h3></a>
+            <a href="/people/chrollo"><h3 class="link">chrollo</h3></a>
+            <a href="/people/ego"><h3 class="link">ego</h3></a>
+            <a href="/people/luv"><h3 class="link">luv</h3></a>
+        </div>
+    </div>
+</body>
+</html>

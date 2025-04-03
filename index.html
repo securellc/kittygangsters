@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maison</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="https://qu.ax/mYMAu.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: meow;
+            src: url(font/a34f9d1faa5f3315-s.p\ \(1\).woff2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden; 
+        }
+
+        body {
+            background-image: url(https://qu.ax/kluJP.png);
+            font-family: meow;
+            font-weight: 200;
+            background-color: black;
+            color: white;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100vw;
+            height: 100vh; 
+        }
+
+        pre {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+
+    <div class="flex flex-col items-center justify-center h-screen">
+        <div class="flex flex-row space-x-6 mb-5">
+            <a href="mailto:zzz@trapst.ar">contact</a>
+            <a target="_blank" href="https://tenkayfan.club">biolink</a>
+        </div>
+    
+        <div class="mt-8"> 
+            <pre class="text-xs">
+    ███╗   ███╗     █████╗     ██╗    ███████╗     ██████╗ ███╗   ██╗
+    ████╗ ████║    ██╔══██╗    ██║    ██╔════╝    ██╔═══██╗████╗  ██║
+    ██╔████╔██║    ███████║    ██║    ███████╗    ██║   ██║██╔██╗ ██║
+    ██║╚██╔╝██║    ██╔══██║    ██║    ╚════██║    ██║   ██║██║╚██╗██║
+    ██║ ╚═╝ ██║    ██║  ██║    ██║    ███████║    ╚██████╔╝██║ ╚████║
+    ╚═╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝    ╚══════╝     ╚═════╝ ╚═╝  ╚═══╝
+            </pre>
+        </div>
+        <p class="mt-10 text-xs">Aspiring full-stack developer and internet <span class="underline decoration-solid">gangster</span> 😈</p>
+    </div>
+
+<script src="particles.js"></script>
+</body>
+</html>

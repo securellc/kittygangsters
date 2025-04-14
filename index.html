@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o_~</title>
+    <link rel="stylesheet" href="stars.css">
+</head>
+<style>
+@font-face {
+  font-family: 'customFont';
+  src: url('font.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: 'customFont', 'Fira Code', 'Courier New', monospace;
+  color: #fdfdfd;
+}
+
+body {
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  animation: slideInFade 1s ease-out;
+}
+
+header {
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2a2a2a;
+  text-align: center;
+}
+
+#main {
+  width: 100%;
+  max-width: 800px;
+}
+
+h2 {
+  margin: 2rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+code, pre {
+  font-size: 0.95rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  display: block;
+}
+
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #2a2a2a;
+  padding: 1rem;
+  font-size: 0.95rem;
+  background-color: #0a0a0a;
+  text-align: left;
+}
+
+table th {
+  background-color: #111111;
+}
+
+#sessionCopy {
+  color: #f2f2f2;
+  transition: color 0.2s ease;
+}
+
+#sessionCopy:hover {
+  color: #c0c0c0;
+}
+
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+</style>
+<body>
+    <div class='galaxy'>
+        <div class='stars1'></div>
+        <div class='stars2'></div>
+        <div class='stars3'></div>
+
+    </div>
+
+    <section id="main" >
+
+        <h2>Links</h2>
+        <table data-tilt>
+            <tr><th>Fg bio link</th></tr>
+          <tr><td><code><a href="https://tenkayfan.club">tenkayfan.club</a></code></td></tr>
+        </table>
+    
+        <h2>socials</h2>
+        <table data-tilt>
+            <tr><th>Email</th></tr>
+          <tr><td><code><a href="mailto:x@afra.id">x@afra.id</a></code></td></tr>
+        </table>
+    
+        <table data-tilt>
+            <tr><th>Discord</th></tr>
+          <tr><td><code><a href="https://discord.com/users/1331201928281067521">Uid: 1331201928281067521</a></code></td></tr>
+          <tr><td><code>User: cats381</code></td></tr>
+        </table>
+
+        <table data-tilt>
+            <tr><th>Session</th></tr>
+            <tr><td><code>Id: <span class="sessionId" id="sessionCopy" style="cursor:pointer;">click 2 copy</span></code></td></tr>
+          </table>
+    
+        <h2>Note</h2>
+        <table data-tilt>
+          <tr><td><code>I listen to The Smiths btw</code></td></tr>
+        </table>
+      </section>
+
+      <script>
+        const sessionCopy = document.getElementById('sessionCopy');
+
+        sessionCopy.addEventListener('click', () => {
+            const text = "05d477dd701e147f5eb8e6c23f980e9868287d6eddefd632da2a48b75649753d5c";
+                navigator.clipboard.writeText(text);
+            });
+      </script>
+    <script src="https://micku7zu.github.io/vanilla-tilt.js/src/vanilla-tilt.min.js"></script>
+</body>
+</html>
